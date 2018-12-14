@@ -1,0 +1,9 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/PresidentWiki/Helper.cs
+/PresidentWiki/appsettings.json
+/PresidentWiki/obj
+/PresidentWiki/bin
+/DataAccess/obj
+/DataAccess/bin
