@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Backend",
+  "main": "server.js",
+  "author": "Michael Le",
+  "license": "ISC",
+  "scripts": {
+    "start": "node ./server.js"
+  },
+  "dependencies": {
+    "aws-serverless-express": "^3.3.5",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "joi": "^14.3.0",
+    "mssql": "^4.3.0"
+  }
+}
