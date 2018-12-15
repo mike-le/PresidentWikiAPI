@@ -17,14 +17,24 @@ namespace PresidentWiki
             _context = context;
         }
 
-        [HttpGet]
-        public async Task<ActionResult> Get()
+        [HttpGet("{sort}")]
+        public async Task<ActionResult> Get(string sort)
         {
             if (!(_context.Presidents.Any()))
                 return NotFound();
-            List<PresidentEntity> presidents = await _context.Presidents
+
+            List<PresidentEntity> presidents = new List<PresidentEntity>();
+            if (sort.Equals("asc"))
+            {
+                presidents = await _context.Presidents
                      .OrderBy(p => p.Name)
                      .ToListAsync();
+            } else if (sort.Equals("desc"))
+            {
+                presidents = await _context.Presidents
+                     .OrderByDescending(p => p.Name)
+                     .ToListAsync();
+            }
 
             return Ok(presidents);
         }

@@ -28,6 +28,12 @@
       "commandLineArgs": "--port 5050",
       "executablePath": "C:\\Users\\Michael\\.dotnet\\tools\\dotnet-lambda-PresidentWiki-tool-2.1.exe",
       "workingDirectory": ".\\bin\\Debug\\netcoreapp2.1"
+    },
+    "Mock Lambda Test Tool": {
+      "commandName": "Executable",
+      "commandLineArgs": "--port 5050",
+      "executablePath": "C:\\Users\\Michael\\.dotnet\\tools\\dotnet-lambda-test-tool-2.1.exe",
+      "workingDirectory": ".\\bin\\Debug\\netcoreapp2.1"
     }
   }
 }
