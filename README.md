@@ -1,5 +1,5 @@
 # PresidentWikiApi
-Developed Independently
+Developed Independently   
 Contributors: Michael Le
 
 ## Description
@@ -9,19 +9,19 @@ PresidentWikiAPI is a sample Node.js/React application hosted on Heroku. The web
 • https://afternoon-depths-99162.herokuapp.com/
 
 ## Heroku Endpoints
-• GET: https://guarded-atoll-67449.herokuapp.com/api/presidents/asc
+• GET: https://guarded-atoll-67449.herokuapp.com/api/presidents/asc    
 • GET: https://guarded-atoll-67449.herokuapp.com/api/presidents/desc
 
 ## AWS API Gateway Endpoint
 • GET: https://bueeelbxie.execute-api.us-east-1.amazonaws.com/Prod/presidents
 
 ## Technologies  
-• Node.js
-• Express.js
-• React.js
-• .NET Core 2.0
-• Entity Framework
-• AWS Lambda
-• AWS API Gateway
-• AWS RDS
-• Heroku
+• Node.js   
+• Express.js   
+• React.js  
+• .NET Core 2.0  
+• Entity Framework  
+• AWS Lambda  
+• AWS API Gateway  
+• AWS RDS  
+• Heroku  
