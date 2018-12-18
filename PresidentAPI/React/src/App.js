@@ -16,7 +16,6 @@ class App extends Component {
     }
     
     handleClick(e) {
-      console.log("reached handleclick...")
       e.preventDefault()
       if(this.state.sort === "ASC"){
         this.setState({

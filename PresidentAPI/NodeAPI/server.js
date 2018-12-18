@@ -13,10 +13,6 @@ router.use(function(req, res, next) {
     next(); 
 });
 
-router.get('/', function(req, res) {
-    res.json({ message: 'hooray! welcome to our api!' });   
-});
-
 router.get('/presidents/:sort', function(req, res) {
     var sort = req.params.sort;
     conn.connect().then(function () {
@@ -28,11 +24,11 @@ router.get('/presidents/:sort', function(req, res) {
         })
         .catch(function (err) {
             conn.close();
-            res.status(400).send("error while inserting data");
+            res.status(400).send("Bad Request: Error while inserting data.");
         });
     }).catch(function (err){
         conn.close();
-        res.status(400).send("Did not connect");
+        res.status(400).send("Bad Request: Could not connect to server.");
     });
 });
 
