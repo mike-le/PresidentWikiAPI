@@ -9,8 +9,8 @@ PresidentWikiAPI is a sample Node.js/React application hosted on Heroku. The web
 • https://afternoon-depths-99162.herokuapp.com/ (disabled)
 
 ## Heroku Endpoints
-• GET: https://guarded-atoll-67449.herokuapp.com/api/presidents/asc (disabled)
-• GET: https://guarded-atoll-67449.herokuapp.com/api/presidents/desc (disabled)
+• GET: https://guarded-atoll-67449.herokuapp.com/api/presidents/asc (disabled)  
+• GET: https://guarded-atoll-67449.herokuapp.com/api/presidents/desc (disabled)  
 
 ## AWS API Gateway Endpoint
 • GET: https://bueeelbxie.execute-api.us-east-1.amazonaws.com/Prod/presidents (disabled)
