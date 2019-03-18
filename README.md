@@ -1,6 +1,5 @@
 # PresidentWikiApi
-Developed Independently   
-Contributors: Michael Le
+[![CircleCI](https://circleci.com/gh/mike-le/PresidentWikiAPI.svg?style=shield)](https://circleci.com/gh/mike-le/PresidentWikiAPI)
 
 ## Description
 PresidentWikiAPI is a sample Node.js/React application hosted on Heroku. The web service was built with Node/Express and communicates with an AWS RDS instance for REST operations. The React client-side supports displaying information from the database in addition to sorting by name. The repository also includes source core for a .NET Core Web API hosted on AWS Lambda with similar functionality. However, the client-side only communites with the Node.js API.
