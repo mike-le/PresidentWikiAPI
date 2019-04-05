@@ -1,13 +1,8 @@
 from flask import Flask, request
 from flask_restful import Resource, Api
 from sqlalchemy import create_engine
-from json import dumps
 from flask import jsonify
-
-# finish setup with aws rds
-db_connect = create_engine('')
-app = Flask(__name__)
-api = Api(app)
+import json
 
 
 class Presidents(Resource):
@@ -26,4 +21,15 @@ class Presidents_Name(Resource):
 
 
 if __name__ == '__main__':
-    app.run(port='5002')
+    try:
+        with open('config.json') as configJSON:
+            config = json.load(configJSON)
+            database = config["database"]
+            username = config["username"]
+            password = config["password"]
+        db_connect = create_engine('')
+        app = Flask(__name__)
+        api = Api(app)
+        app.run(port='5002')
+    except FileNotFoundError as e:
+        print('JSON file not found: {0}'.format(str(e)))
