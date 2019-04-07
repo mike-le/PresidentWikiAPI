@@ -24,10 +24,11 @@ if __name__ == '__main__':
     try:
         with open('config.json') as configJSON:
             config = json.load(configJSON)
+            db_context = config["engine"]
             database = config["database"]
             username = config["username"]
             password = config["password"]
-        db_connect = create_engine('')
+        db_connect = create_engine(db_context)
         app = Flask(__name__)
         api = Api(app)
         app.run(port='5002')
