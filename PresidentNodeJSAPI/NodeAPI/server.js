@@ -18,15 +18,16 @@ router.get('/presidents/:sort', function(req, res) {
     conn.connect().then(function () {
         var sqlQuery = "Select * FROM Presidents ORDER BY name " + sort;
         var req = new sql.Request(conn);
-        req.query(sqlQuery).then(function (recordset) {
+        req.query(sqlQuery)
+        .then(function (recordset) {
             res.json(recordset.recordset);
             conn.close();
         })
-        .catch(function (err) {
+        .catch(function () {
             conn.close();
             res.status(400).send("Bad Request: Error while inserting data.");
         });
-    }).catch(function (err){
+    }).catch(function (){
         conn.close();
         res.status(400).send("Bad Request: Could not connect to server.");
     });
